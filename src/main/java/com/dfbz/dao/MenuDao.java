@@ -16,7 +16,8 @@ public class MenuDao extends BaseDao {
 
     public List<Menu> listAll() {
         String sql = "select * from menu";
-        return template.query(sql, new BeanPropertyRowMapper<Menu>(Menu.class));
+        List<Menu> query = template.query(sql, new BeanPropertyRowMapper<>(Menu.class));
+        return query;
     }
 
 }

@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
+    private String deptName;
+
     private Integer id;
     private String username;
     private String password;
@@ -14,13 +16,31 @@ public class User implements Serializable {
     private Integer age;
     private String phone;
     private String gender;
-    private String desc;
+    private String description;
     private String registerTime;
     private String loginTime;
     private String pic;
     private Integer look;
     private String isSecret;
     private Integer deptId;
+    private Integer flag;
+
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
+
+    public Integer getFlag() {
+        return flag;
+    }
+
+    public void setFlag(Integer flag) {
+        this.flag = flag;
+    }
 
     public Integer getId() {
         return id;
@@ -102,12 +122,12 @@ public class User implements Serializable {
         this.gender = gender;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getRegisterTime() {

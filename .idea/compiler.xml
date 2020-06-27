@@ -9,5 +9,8 @@
         <module name="xbhy" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xbhy" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
